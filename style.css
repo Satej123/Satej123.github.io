@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+body{
+    background-color: rgb(2, 2, 2);
+}
+.first{
+    background-image: url(image/bg.webp) ;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:1920px;
+    height: 1080px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 3% 8%;
+    justify-content: center;
+    align-items: center;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.navlinks ul li a{
+    color: gray;
+    text-decoration: solid;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(66, 66, 66);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+.products{
+    width: 90%;
+    position: absolute;
+    color: grey;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: Helvetica;
+}
+.products h1{
+    font-size: 065;
+}
+.products p{
+    font-size: 36;
+}
+.phone{
+    background-image: url(images/i14);
+    background-size: 30 30;
+    background-color: black;
+}
+.second{
+    background-image: url(image/i14.png);
+    border-image: auto;
+    border: 10px;
+    width: 830px;
+    height: 930px;
+    transform: scale(0.6);
+    display: inline-block;
+}
+.right{
+    color: grey;
+    text-align: center;
+    font-family: Helvetica;
+    display: inline-block;
+    padding-right: 200px;
+    padding-top: 270px;
+}
+.right p{
+    font-size: 30px;
+}
+.right h1{
+    font-size: 60px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom{
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+    font-family: Helvetica;
+    color: rgb(43, 43, 43);
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.legal{
+    padding-left: 150px;
+    padding-right: 150px;
+    color: grey;
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 25px;
+    padding-bottom: 300px;
+
+}
+.logo{
+    transition: transform .2s;
+}
+.logo:hover{
+    transform: scale(1.5);
+}
